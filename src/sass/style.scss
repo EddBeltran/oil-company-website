@@ -1,7 +1,74 @@
-@use 'bro';
+@use 'config';
+@use 'utilities';
 
+.header {
+    background: rgb(243, 243, 241);
+    padding: 1rem;
 
-h1 {
-    color: red;
-    font-family: bro.$crack;
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.7rem;
+    
+        &__logo {
+            color: black;
+            cursor: pointer;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+
+            img {
+                width: 45px;
+                padding-right: 1rem;
+            }
+        }
+    
+        &__items {
+            display: flex;
+            list-style: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            li {
+                padding-left: 2rem;
+                cursor: pointer;
+            }
+            li:last-child {
+                font-weight: bold;
+                color: gray;
+            }
+        }
+    }
+}
+
+.hero {
+    height: 500px;
+    overflow:hidden;
+}
+
+.links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+    :hover {
+        background-color: darkblue;
+    }
+}
+
+.icon-link {
+    border: solid 2px blue;
+    padding: 1rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    
+    img {
+        width: 40px;
+    }
+    
+
 }
