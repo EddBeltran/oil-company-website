@@ -1,8 +1,9 @@
 @use 'config';
 @use 'utilities';
 
+// header component
 .header {
-    background: rgb(243, 243, 241);
+    background: rgb(212, 212, 81);
     padding: 1rem;
 
     .nav {
@@ -31,6 +32,8 @@
             -moz-user-select: none;
             -ms-user-select: none;
             user-select: none;
+            align-items: center;
+
             li {
                 padding-left: 2rem;
                 cursor: pointer;
@@ -43,11 +46,13 @@
     }
 }
 
+// hero component
 .hero {
-    height: 500px;
+    max-height: 500px;
     overflow:hidden;
 }
 
+// links component
 .links {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -69,6 +74,43 @@
     img {
         width: 40px;
     }
-    
+}
 
+// about us component
+.about-us {
+    display: flex;
+
+    &__image {
+        flex: 1;
+    }
+    &__scrollable {
+        flex: 1;
+    }
+}
+
+// certificates component
+
+.certificate {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 1rem;
+    
+    &__logo {
+        display: flex;
+        align-content: center;
+        max-height: 60px;
+        max-width: 180px;
+        position: relative;
+
+        img {
+            opacity: 0.5;
+            filter: grayscale(100%);
+
+            &:hover {
+                filter: grayscale(0%);
+                opacity: 0.85;
+                transition: 0.1s ease-in;
+            }
+        }
+    }
 }

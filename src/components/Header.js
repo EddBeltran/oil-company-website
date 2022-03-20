@@ -1,6 +1,6 @@
 import React from 'react'
 import {useState} from 'react'
-import Logo from '../assets/icons/logo-dino.svg'
+import Logo from '../assets/icons/_main_logo.svg'
 
 function Header() {
 const [language, setLanguage] = useState(true)
@@ -10,11 +10,11 @@ function handleLanguaje(){
 }
                 
   return (
-    <div className=' header big-container'>
+    <div className='header big-container'>
         <nav className='nav small-container'>
             <a href='google.com' className='nav__logo'>
-                <img src={Logo} />
-                Azteca Oil
+                <img src={Logo} alt="logo oil company" />
+                <span>Azteca Oil</span>
             </a>
             <ul className='nav__items'>
                 <li>Who We Are</li>
