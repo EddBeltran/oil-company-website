@@ -1,16 +1,18 @@
 import AboutUs from './components/AboutUs'
 import Certificates from './components/Certificates'
 import Header from './components/Header'
-import HeroSlider from './components/HeroSlider'
+import Hero from './components/Hero'
 import Links from './components/Links'
+import Facts from './components/Facts'
 
 function HomePage(){
     return (
         <div>
             <Header />
-            <HeroSlider />
+            <Hero />
             <Links />
             <AboutUs />
+            <Facts />
             <Certificates />
         </div>
     )

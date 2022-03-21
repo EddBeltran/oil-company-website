@@ -13,6 +13,10 @@
     padding: 2rem 0;
     //background: yellow;
 
+    &-primary {
+        background: brown;
+    }
+
     &-dark {
         background: green;
     }
@@ -25,5 +29,25 @@
     &__paragraph {
         font-size: 2rem;
         color: yellow;
+    }
+}
+
+.grid {
+    display: grid;
+
+    &--1x3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    &--1x4 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    &--1x5 {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    &--1x6 {
+        grid-template-columns: repeat(6, 1fr);
+    }
+    &--1x7 {
+        grid-template-columns: repeat(7, 1fr);
     }
 }
