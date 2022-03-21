@@ -4,6 +4,7 @@ import Header from './components/Header'
 import Hero from './components/Hero'
 import Links from './components/Links'
 import Facts from './components/Facts'
+import Values from './components/Values' 
 
 function HomePage(){
     return (
@@ -13,6 +14,7 @@ function HomePage(){
             <Links />
             <AboutUs />
             <Facts />
+            <Values />
             <Certificates />
         </div>
     )

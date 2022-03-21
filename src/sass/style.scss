@@ -179,3 +179,20 @@
         }
     }
 }
+
+.values {
+    background: red;
+    display: flex;
+
+    &__paragraph {
+        width: 33.33%;
+        background: yellow;
+    }
+    
+    &__links {
+        width: 66.66%;
+        gap: 2rem;
+    }
+
+
+}
