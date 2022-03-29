@@ -5,6 +5,7 @@ import Hero from './components/Hero'
 import Links from './components/Links'
 import Facts from './components/Facts'
 import Values from './components/Values' 
+import Services from './components/Services'
 import Footer from './components/Footer'
 
 function HomePage(){
@@ -16,6 +17,7 @@ function HomePage(){
             <AboutUs />
             <Facts />
             <Values />
+            <Services />
             <Certificates />
             <Footer />
         </div>

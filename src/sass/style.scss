@@ -200,6 +200,65 @@
     }
 }
 
+.services {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.card {
+    background-color: red;
+    position: relative;
+    height: 300px;
+
+    &__text {
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        position: absolute;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        padding: 3rem 1rem;
+
+        &__title {
+            color: yellow;
+        }
+        &__description {
+            color: pink;
+            height: 0;
+            overflow: hidden;
+        }
+
+
+        
+        &.active {
+            background-color: rgba(14, 17, 14, 0.5);
+            justify-content: space-between;
+            
+            .card__text__title {
+                color: red;
+                transition: 0.5s ease-in;
+            }
+            .card__text__description {
+                background-color: blue;
+                height: auto;
+                
+            }
+        }
+    }
+
+    img {
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        object-fit: cover;
+    }
+}
+
+
 .footer {
     background-color: red;
     display: flex;
