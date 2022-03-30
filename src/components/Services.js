@@ -6,7 +6,7 @@ function Services() {
   return (
     <section className='block'>
       <div className='small-container'>
-        <h2 className='block__header'>Values</h2>
+        <h2 className='block__header'>Services</h2>
         <div className='services'> 
           <Card 
             title='3D seismic survey'

@@ -4,7 +4,7 @@ import FooterLinks from './FooterLinks'
 
 function Footer(){
     return(
-        <section className='block block-dark'>
+        <section className='block block-dark big-container'>
             <div className='footer small-container'>
                 <div className='footer__info'>
                     <h4>Azteca Oil Company © 2022</h4>

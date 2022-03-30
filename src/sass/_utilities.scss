@@ -1,17 +1,17 @@
 .small-container {
     margin: 0 auto;
+    //max-width: 1024px;
     max-width: 1024px;
     padding: 0 1rem;
 }
 
 .big-container {
     margin: 0 auto;
-    max-width: 1400px;
+    max-width: 1600px;
 }
 
 .block {
     padding: 2rem 0;
-    //background: yellow;
 
     &-primary {
         background: brown;
