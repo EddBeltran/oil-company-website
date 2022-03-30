@@ -9,12 +9,15 @@ import Logo5 from '../assets/icons/logo-AENOR-2.png'
 function Certificates() {
   return (
     <section className='block'>
-        <div className='certificate small-container'>
+        <div className='small-container'>
+          <h2 className='block__header'>Certificates</h2>
+          <div className='certificate'>
             <div className='certificate__logo'><img src={Logo1} /></div>
             <div className='certificate__logo'><img src={Logo2} /></div>
             <div className='certificate__logo'><img src={Logo3} /></div>
             <div className='certificate__logo'><img src={Logo4} /></div>
             <div className='certificate__logo'><img src={Logo5} /></div>
+          </div>
         </div>
     </section>
   )

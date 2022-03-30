@@ -286,9 +286,43 @@
         grid-column: 4/5;
         grid-row: 4/7;
         background-color: black;
+    }   
+}
 
+.news-scroller {
+    display: grid;
+    gap: 1rem;
+    grid-auto-flow: column;
+    grid-auto-columns: 21%;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+
+    &__card {
+        background: red;
+        height: 200px;
     }
-    
+}
+
+.snaps-inline{
+    scroll-snap-type: inline mandatory;
+    scroll-padding-inline: 1rem;
+
+    * {
+        scroll-snap-align: start;
+    }
+}
+
+.news-scroller::-webkit-scrollbar {
+    width: 2rem;
+    height: 1rem;
+}
+
+.news-scroller::-webkit-scrollbar-track {
+    background-color: rgb(72, 255, 0);
+}
+
+.news-scroller::-webkit-scrollbar-thumb {
+    background-color: blue;
 }
 
 .footer {

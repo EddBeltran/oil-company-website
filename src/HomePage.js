@@ -8,6 +8,7 @@ import Values from './components/Values'
 import Services from './components/Services'
 import Footer from './components/Footer'
 import Mosaic from './components/Mosaic'
+import News from './components/News'
 
 function HomePage(){
     return (
@@ -20,6 +21,7 @@ function HomePage(){
             <Values />
             <Services />
             <Mosaic />
+            <News />
             <Certificates />
             <Footer />
         </div>
