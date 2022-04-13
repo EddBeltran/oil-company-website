@@ -1,0 +1,403 @@
+// header component
+.header {
+    color: #fff;
+    padding: 1rem;
+    position: fixed;
+    z-index: 500;
+    width: 100%;
+    background-color: rgb(247, 248, 248);
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.7rem;
+        color: rgb(70, 69, 69);
+
+    
+        &__logo {
+            color: rgb(68, 67, 67);
+            cursor: pointer;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+
+            img {
+                width: 45px;
+                padding-right: 1rem;
+            }
+        }
+    
+        &__items {
+            display: flex;
+            list-style: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            align-items: center;
+
+            li {
+                padding-left: 2rem;
+                cursor: pointer;
+            }
+            li:last-child {
+                font-weight: bold;
+                color: gray;
+            }
+        }
+        
+        .burger {
+            width: 35px;
+            cursor: pointer;
+            display: none;
+
+            &__toggle {
+                display: flex;
+                height: 100%;
+                flex-direction: column;
+                justify-content: center;
+                align-self: center;
+
+                div {
+                    height: 3px;
+                    margin: 3.5px 0;
+                    background-color: rgb(61, 60, 60);
+                    border-radius: 10px;
+                    transition: 0.4s ease-in;
+                }
+                &__middle-line{
+                    width: 80%;
+                    align-self: flex-end;
+                }
+            }
+
+            &.active {
+                .burger__toggle{
+                    div{
+                        background-color: rgb(206, 206, 206);
+                    }
+                    &__top-line {
+                        transform: rotate(-45deg) translate(-8px, 6px);
+                    }
+                    &__middle-line {
+                        width: 0%;
+                    }
+                    &__bottom-line {
+                        transform: rotate(45deg) translate(-8px, -6px);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sam {
+    background-color: magenta;
+}
+
+// hero component
+.hero {
+    max-height: 500px;
+    overflow:hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &__background-image {
+        z-index: 10;
+    }
+
+    &__container {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 100;
+        
+        &__card {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            justify-content: center;
+
+            &__header {
+                color: #fff;
+                font-size: 2rem;
+            }
+
+            &__text {
+                color: greenyellow;
+                max-width: 50ch;
+            }
+        }
+    }
+    
+    &::after {
+        content: "";
+        background: rgba(3, 3, 3, 0.493);
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        z-index: 10;
+    }
+}
+
+// links component
+.links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+    :hover {
+        background-color: darkblue;
+    }
+}
+
+.icon-link {
+    border: solid 2px blue;
+    padding: 1rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    
+    img {
+        width: 40px;
+    }
+}
+
+// about us component
+.about-us {
+    display: flex;
+
+    &__image {
+        width: 50%;
+    }
+    &__content {
+        width: 50%;
+        padding-left: 1rem;
+        font-size: 1.7rem;
+    }
+}
+
+// facts components
+.fact {
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            max-width: 70px;
+            max-height: 60px;
+            display: block;
+        }
+        &__number {
+            color: rgb(123, 255, 0);
+            font-size: 3rem;
+        }
+        &__text {
+            color: aqua;
+            font-size: 2rem;
+        }
+    }
+}
+
+// certificates component
+.certificate {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 1rem;
+    
+    &__logo {
+        display: flex;
+        align-content: center;
+        max-height: 60px;
+        max-width: 180px;
+        position: relative;
+
+        img {
+            opacity: 0.5;
+            filter: grayscale(100%);
+
+            &:hover {
+                filter: grayscale(0%);
+                opacity: 0.85;
+                transition: 0.1s ease-in;
+            }
+        }
+    }
+}
+
+.values {
+    background: red;
+    display: flex;
+
+    &__paragraph {
+        width: 33.33%;
+        background: yellow;
+    }
+    
+    &__links {
+        width: 66.66%;
+        gap: 2rem;
+    }
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.card {
+    background-color: red;
+    position: relative;
+    height: 300px;
+
+    &__text {
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        position: absolute;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        padding: 3rem 1rem;
+
+        &__title {
+            color: yellow;
+        }
+        &__description {
+            color: pink;
+            height: 0;
+            overflow: hidden;
+        }
+        
+        &.active {
+            background-color: rgba(14, 17, 14, 0.5);
+            justify-content: space-between;
+            
+            .card__text__title {
+                color: red;
+                transition: 0.5s ease-in;
+            }
+            .card__text__description {
+                background-color: blue;
+                height: auto;
+                
+            }
+        }
+    }
+
+    img {
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        object-fit: cover;
+    }
+}
+
+.mosaic {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(80px, auto);
+    gap: 0.5rem;
+
+    .one {
+        grid-column: 1/3;
+        grid-row: 1/5;
+        background-color: yellow;
+    }
+    .two {
+        grid-column: 1/3;
+        grid-row: 5/7;
+        background-color: rgb(21, 255, 0);
+    }
+    .three {
+        grid-column: 3/4;
+        grid-row: 1/7;
+        background-color: rgb(0, 26, 255);
+    }
+    .four {
+        grid-column: 4/5;
+        grid-row: 1/4;
+        background-color: aqua;
+    }
+    .five {
+        grid-column: 4/5;
+        grid-row: 4/7;
+        background-color: black;
+    }   
+}
+
+.news-scroller {
+    display: grid;
+    gap: 1rem;
+    grid-auto-flow: column;
+    grid-auto-columns: 21%;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+
+    &__card {
+        background: red;
+        height: 200px;
+    }
+}
+
+.snaps-inline{
+    scroll-snap-type: inline mandatory;
+    scroll-padding-inline: 1rem;
+
+    * {
+        scroll-snap-align: start;
+    }
+}
+
+.news-scroller::-webkit-scrollbar {
+    width: 2rem;
+    height: 1rem;
+}
+
+.news-scroller::-webkit-scrollbar-track {
+    background-color: rgb(72, 255, 0);
+}
+
+.news-scroller::-webkit-scrollbar-thumb {
+    background-color: blue;
+}
+
+.footer {
+    background-color: red;
+    display: flex;
+
+    &__info {
+        width: 30%;
+        background-color: aqua;
+
+        &__socialmedia {
+            img {
+                border: 1px solid red;
+                border-radius: 20rem;
+                width: 30px;
+                padding: 0.5rem;
+                margin-right: 0.5rem;
+            }
+        }
+    }
+    
+    &__links {
+        width: 70%;
+        display: flex;
+        background-color: antiquewhite;
+        justify-content: space-between;
+    }
+}

@@ -3,7 +3,7 @@ import React from 'react'
 function News() {
 
   return (
-    <section className='block'>
+    <section className='block bro'>
         <div className='small-container'>
           <h2 className='block__header'>News</h2>
           <div className='news-scroller snaps-inline'>

@@ -8,7 +8,7 @@ import Logo5 from '../assets/icons/logo-AENOR-2.png'
 
 function Certificates() {
   return (
-    <section className='block'>
+    <section className='block bro'>
         <div className='small-container'>
           <h2 className='block__header'>Certificates</h2>
           <div className='certificate'>
