@@ -1,9 +1,6 @@
 import React from "react";
 import { useState } from "react";
 import Icon from "./UI/Icon";
-//import Logo from "../assets/icons/sprite.svg#_main_logo";
-//import Logo from "/sprite.svg#icon-pacman";
-//import { ReactComponent as ReactSprite } from "../assets/icons/sprite.svg";
 
 function Header() {
   const [language, setLanguage] = useState(true);
@@ -22,11 +19,8 @@ function Header() {
     <div className="header">
       <nav className="nav small-container">
         <a href="google.com" className="nav__logo">
-        <div className="icon-container">
-          <Icon name="email" color="green" size={35} />
-        </div>
-
-          <span>Azteca Oil</span>
+          <Icon name="_main_logo" color="blue" size={35} />
+          <span className="nav__logo__text">Azteca Oil</span>
         </a>
         <ul className={showMenu ? "nav__items active" : "nav__items"}>
           <li>Who We Are</li>

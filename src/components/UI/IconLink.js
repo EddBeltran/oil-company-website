@@ -1,10 +1,20 @@
-import React from 'react'
+import React from 'react';
+import Icon from './Icon';
 
-function IconLink(props) {
+function IconLink({text, iconName, iconSize, buttomStyle}) {
+  let iconColor
+  if (buttomStyle==="primary"){
+    iconColor = "blue";
+  } else if (buttomStyle==="secondary"){
+    iconColor = "green";
+  } else {
+    iconColor = "orange";
+  }
+
   return (
-    <div className='icon-link'>
-        <p>{props.text}</p>
-        <img src={props.image} alt={props.text}/>
+    <div className={`icon-link icon-link--${buttomStyle}`}>
+        <p>{text}</p>
+        <Icon name={iconName} color={iconColor} size={iconSize} />
     </div>
   )
 }

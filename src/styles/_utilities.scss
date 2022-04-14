@@ -58,24 +58,13 @@
     }
 }
 
-
 .icon-container {
-    width: 40px;
-    height: 40px;
-    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.icon { 
-    width: 50px; 
-    height: 50px;
-    position: 'absolute';
-
-    &--white {
-        fill: orange;
-    }
-}
-
-  .btn {
+.btn {
     background-color: red;
     color: #fff;
     border: 0;
@@ -85,15 +74,36 @@
 
 
 .icon-link {
-    border: solid 2px blue;
     padding: 1rem;
     font-size: 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
-    
-    img {
-        width: 40px;
+    transition: 0.1s ease-in;
+
+    &--primary {
+        border: solid 2px config.$primary-color;
+        &:hover {
+            color: #fff;
+            background-color: config.$primary-color;
+            & .icon-container svg {
+                fill: #fff;
+            }
+        }
     }
+
+    &--secondary {
+        border: solid 2px config.$secondary-color;
+        &:hover {
+            color: #fff;
+            background-color: config.$secondary-color;
+            & .icon-container svg {
+                fill: #fff;
+            }
+        }
+    }
+
+
+
 }

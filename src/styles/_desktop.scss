@@ -23,9 +23,8 @@
             align-items: center;
             font-weight: bold;
 
-            img {
-                width: 45px;
-                padding-right: 1rem;
+            &__text {
+                padding-left: 0.5rem;
             }
         }
     
@@ -265,7 +264,7 @@
         color: #fff;
         display: flex;
         flex-direction: column;
-        justify-content: end;
+        justify-content: flex-end;
         padding: 3rem 1rem;
 
         &__title {
