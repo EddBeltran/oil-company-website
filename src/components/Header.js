@@ -1,6 +1,9 @@
 import React from "react";
 import { useState } from "react";
-import Logo from "../assets/icons/_main_logo.svg";
+import Icon from "./UI/Icon";
+//import Logo from "../assets/icons/sprite.svg#_main_logo";
+//import Logo from "/sprite.svg#icon-pacman";
+//import { ReactComponent as ReactSprite } from "../assets/icons/sprite.svg";
 
 function Header() {
   const [language, setLanguage] = useState(true);
@@ -8,11 +11,6 @@ function Header() {
 
   function handleLanguaje() {
     setLanguage((prevState) => !prevState);
-  }
-
-  function resposiveNavBar() {
-    const navWidth = document.querySelector("nav");
-    console.log("width", navWidth.offsetWidth);
   }
 
   function toggleBurger() {
@@ -24,18 +22,20 @@ function Header() {
     <div className="header">
       <nav className="nav small-container">
         <a href="google.com" className="nav__logo">
-          <img src={Logo} alt="logo oil company" />
+        <div className="icon-container">
+          <Icon name="email" color="green" size={35} />
+        </div>
+
           <span>Azteca Oil</span>
         </a>
-        <ul className={showMenu ? "nav__items active" : "nav__items" }>
-                <li>Who We Are</li>
-                <li>Operations</li>
-                <li>Carrers</li>
-                <li>Investors</li>
-                <li>Contact Us</li>
-                <li onClick={resposiveNavBar}>{language ? "Eng" : "Esp"}</li>
-            </ul>
-
+        <ul className={showMenu ? "nav__items active" : "nav__items"}>
+          <li>Who We Are</li>
+          <li>Operations</li>
+          <li>Carrers</li>
+          <li>Investors</li>
+          <li>Contact Us</li>
+          <li onClick={handleLanguaje}>{language ? "Eng" : "Esp"}</li>
+        </ul>
         <div
           className={showMenu ? "burger active" : "burger"}
           onClick={toggleBurger}

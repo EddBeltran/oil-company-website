@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import HomePage from './HomePage'
-import './sass/style.scss'
+import App from './App'
+import './styles/style.scss'
 
 
 ReactDOM.render(
-    <HomePage />,
+    <App />,
     document.getElementById('root')
 )

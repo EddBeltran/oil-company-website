@@ -6,6 +6,7 @@
     z-index: 500;
     width: 100%;
     background-color: rgb(247, 248, 248);
+    box-shadow: -5px 3px 10px 1px rgba(0, 0, 0, 0.2);
 
     .nav {
         display: flex;
@@ -74,9 +75,6 @@
 
             &.active {
                 .burger__toggle{
-                    div{
-                        background-color: rgb(206, 206, 206);
-                    }
                     &__top-line {
                         transform: rotate(-45deg) translate(-8px, 6px);
                     }
@@ -92,84 +90,82 @@
     }
 }
 
-.sam {
-    background-color: magenta;
+.sam-bro {
+    background-color: rgb(199, 191, 199);
+    height: 500px;
 }
 
 // hero component
-.hero {
-    max-height: 500px;
-    overflow:hidden;
-    position: relative;
-    display: flex;
-    align-items: center;
+// .hero {
+//     max-height: 500px;
+//     overflow:hidden;
+//     position: relative;
+//     display: flex;
+//     align-items: center;
 
-    &__background-image {
-        z-index: 10;
-    }
+//     &__background-image {
+//         z-index: 10;
+//     }
 
-    &__container {
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        z-index: 100;
+//     &__container {
+//         top: 0;
+//         left: 0;
+//         width: 100%;
+//         height: 100%;
+//         position: absolute;
+//         z-index: 100;
         
-        &__card {
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: left;
-            justify-content: center;
+//         &__card {
+//             height: 100%;
+//             display: flex;
+//             flex-direction: column;
+//             align-items: left;
+//             justify-content: center;
 
-            &__header {
-                color: #fff;
-                font-size: 2rem;
-            }
+//             &__header {
+//                 color: #fff;
+//                 font-size: 2rem;
+//             }
 
-            &__text {
-                color: greenyellow;
-                max-width: 50ch;
-            }
-        }
-    }
+//             &__text {
+//                 color: greenyellow;
+//                 max-width: 50ch;
+//             }
+//         }
+//     }
     
-    &::after {
-        content: "";
-        background: rgba(3, 3, 3, 0.493);
-        height: 100%;
-        width: 100%;
-        top: 0;
-        left: 0;
-        position: absolute;
-        z-index: 10;
-    }
-}
+//     &::after {
+//         content: "";
+//         background: rgba(3, 3, 3, 0.493);
+//         height: 100%;
+//         width: 100%;
+//         top: 0;
+//         left: 0;
+//         position: absolute;
+//         z-index: 10;
+//     }
+// }
 
 // links component
-.links {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 1rem;
-    :hover {
-        background-color: darkblue;
-    }
+.hero-links {
+    gap: 1rem;
 }
 
-.icon-link {
-    border: solid 2px blue;
-    padding: 1rem;
-    font-size: 1.5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-    
-    img {
-        width: 40px;
-    }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // about us component
 .about-us {

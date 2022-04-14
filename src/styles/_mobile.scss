@@ -1,7 +1,8 @@
 @media screen and (max-width:768px) {
-
+    // header
     .header {
         position: relative;
+        
         .nav {
             &__items {
                 position: absolute;
@@ -10,19 +11,21 @@
                 right: 0;
                 height: 100vh;
                 width: 0%;
-                padding-top: 6rem;
+                padding-top: 7rem;
                 background: rgb(235, 238, 236);
                 transition: 0.4s ease-in;
                 overflow: hidden;
+                box-shadow: -2px 3px 10px 1px rgba(0, 0, 0, 0.2);
 
                 li {
                     opacity: 0;
+                    padding-left: 0;
                     padding-bottom: 2rem;
                     transition: 0.2s ease-in;
                 }
 
                 &.active {
-                    width: 30%;
+                    width: 250px;
                     transition: 0.2s ease-in;
                     li {
                         opacity: 1;
@@ -36,5 +39,11 @@
             }
         }
     }
+    //hero-slider
+    //hero-links
+    .hero-links {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
     
 }
