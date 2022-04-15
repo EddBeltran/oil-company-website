@@ -14,6 +14,7 @@ import HeroSlider from './components/HeroSlider/HeroSlider';
 import useObserver from './hooks/useObserver'
 import { useEffect } from 'react'
 import HeroLinks from './components/HeroLinks';
+import WhoWeAre from './components/WhoWeAre';
 
 
 
@@ -43,6 +44,7 @@ function App(){
             <Header />
             <HeroSlider />
             <HeroLinks />
+            <WhoWeAre />
         </div>
     )
 }

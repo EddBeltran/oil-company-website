@@ -40,9 +40,29 @@
         }
     }
     //hero-slider
+
+
     //hero-links
     .hero-links {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    //who we are
+    .who-we-are {
+        flex-direction: column;
+        
+        &__image {
+            width: 100%;
+            max-height: 150px;
+        }
+
+        &__content {
+            padding: 0;
+            width: 100%;
+            p {
+                padding: 2rem 0;
+            }
+        }
     }
 
     

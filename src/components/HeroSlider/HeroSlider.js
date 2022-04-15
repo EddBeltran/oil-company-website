@@ -2,7 +2,7 @@ import React from 'react'
 
 function HeroSlider() {
   return (
-    <div className='sam-bro'> hello from HeroSlider</div>
+    <div className='sam'> hello from HeroSlider</div>
   )
 }
 

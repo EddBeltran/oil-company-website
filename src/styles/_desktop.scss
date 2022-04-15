@@ -89,12 +89,12 @@
     }
 }
 
-.sam-bro {
-    background-color: rgb(199, 191, 199);
-    height: 500px;
+// hero-slider component
+.sam {
+    background-color: aqua;
+    height: 600px;
 }
 
-// hero component
 // .hero {
 //     max-height: 500px;
 //     overflow:hidden;
@@ -150,35 +150,27 @@
     gap: 1rem;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// about us component
-.about-us {
+// who we are component
+.who-we-are {
     display: flex;
 
     &__image {
-        width: 50%;
+        width: 40%;
     }
     &__content {
-        width: 50%;
-        padding-left: 1rem;
+        width: 60%;
+        padding-left: 2rem;
         font-size: 1.7rem;
+        p {
+            padding-bottom: 2rem;
+        }
     }
 }
+
+
+
+
+
 
 // facts components
 .fact {

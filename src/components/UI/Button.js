@@ -1,8 +1,8 @@
 import React from 'react'
 
-function Button(props) {
+function Button({text, buttonStyle}) {
   return (
-    <button className='btn'>{props.text}</button>
+    <button className={`btn btn--${buttonStyle}`}>{text}</button>
   )
 }
 

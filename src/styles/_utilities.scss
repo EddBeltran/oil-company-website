@@ -20,17 +20,7 @@
     }
 
     &-dark {
-        background: green;
-    }
-
-    &__header {
-        font-size: 2.5rem;
-        color: red;
-        padding: 1rem 0;
-    }
-    &__paragraph {
-        font-size: 2rem;
-        color: yellow;
+        background: rgb(2, 14, 2);
     }
 }
 
@@ -40,7 +30,6 @@
     &--1x2 {
         grid-template-columns: repeat(2, 1fr);
     }
-
     &--1x3 {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -58,6 +47,40 @@
     }
 }
 
+
+//UI fragments
+.head-section {
+    margin-bottom: 1.5rem;
+
+    &__title {
+        font-size: 2.5rem;
+    }
+    &__text {
+        font-size: 1.8rem;
+    }
+
+    &--primary {
+        .head-section__title {
+            color: config.$primary-color;
+        }
+        .head-section__text {
+            color: rgb(85, 84, 84);
+        }
+    }
+    
+    &--secondary {
+        .head-section__title {
+            color: #fff;
+        }
+        .head-section__text {
+            color: #fff;
+        }
+    }
+}
+
+
+
+
 .icon-container {
     display: flex;
     align-items: center;
@@ -65,11 +88,29 @@
 }
 
 .btn {
-    background-color: red;
-    color: #fff;
     border: 0;
-    padding: 0.5rem 1rem;
+    padding: 0.7rem 1rem;
     width: fit-content;
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-family: config.$font-stack;
+
+    &--primary {
+        background-color: config.$primary-color;
+        color: #fff;
+
+        &:hover {
+            background-color: lighten(config.$primary-color, 10);
+        }
+    }
+    &--secondary {
+        background-color: config.$secondary-color;
+        color: #fff;
+
+        &:hover {
+            background-color: lighten(config.$secondary-color, 10);
+        }
+    }
 }
 
 
