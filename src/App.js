@@ -1,5 +1,7 @@
 import Header from './components/Header';
 import HeroSlider from './components/HeroSlider/HeroSlider';
+import WhoWeAre from './components/WhoWeAre';
+import CompanyFacts from './components/CompanyFacts/CompanyFacts';
 
 //import AboutUs from './components/AboutUs'
 //import Certificates from './components/Certificates'
@@ -14,7 +16,6 @@ import HeroSlider from './components/HeroSlider/HeroSlider';
 import useObserver from './hooks/useObserver'
 import { useEffect } from 'react'
 import HeroLinks from './components/HeroLinks';
-import WhoWeAre from './components/WhoWeAre';
 
 
 
@@ -45,6 +46,7 @@ function App(){
             <HeroSlider />
             <HeroLinks />
             <WhoWeAre />
+            <CompanyFacts />
         </div>
     )
 }

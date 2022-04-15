@@ -9,17 +9,18 @@
 
 .big-container {
     margin: 0 auto;
-    max-width: 1600px;
+    max-width: 2000px;
 }
 
 .block {
     padding: 2rem 0;
 
-    &-primary {
-        background: brown;
+    &--primary {
+        margin-top: 2rem;
+        background: config.$primary-color;
     }
 
-    &-dark {
+    &--dark {
         background: rgb(2, 14, 2);
     }
 }
