@@ -19,7 +19,7 @@ function Header() {
     <div className="header">
       <nav className="nav small-container">
         <a href="google.com" className="nav__logo">
-          <Icon name="_main_logo" color="blue" size={35} />
+          <Icon name="azteca-oil" color="blue" size={35} />
           <span className="nav__logo__text">Azteca Oil</span>
         </a>
         <ul className={showMenu ? "nav__items active" : "nav__items"}>

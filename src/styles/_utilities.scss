@@ -12,17 +12,26 @@
     max-width: 2000px;
 }
 
+
 .block {
     padding: 2rem 0;
 
+    &--big {
+        padding: 4rem 0;
+    }
+
     &--primary {
-        margin-top: 2rem;
         background: config.$primary-color;
     }
 
     &--dark {
         background: rgb(2, 14, 2);
     }
+
+    &--light {
+        background: rgb(231, 235, 231);
+    }
+
 }
 
 .grid {
@@ -124,6 +133,10 @@
     cursor: pointer;
     transition: 0.1s ease-in;
 
+    p {
+        padding-right: 1rem;
+    }
+
     &--primary {
         border: solid 2px config.$primary-color;
         &:hover {
@@ -146,6 +159,11 @@
         }
     }
 
+    &--light-primary {
+        border: solid 2px lightgray;
+        background-color: #fff;
+        cursor: default;
 
+    }
 
 }

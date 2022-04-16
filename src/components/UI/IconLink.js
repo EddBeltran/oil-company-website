@@ -7,7 +7,11 @@ function IconLink({text, iconName, iconSize, buttomStyle}) {
     iconColor = "blue";
   } else if (buttomStyle==="secondary"){
     iconColor = "green";
-  } else {
+  } else if (buttomStyle==="light-primary"){
+    iconColor = "blue";
+  }
+  
+  else {
     iconColor = "orange";
   }
 

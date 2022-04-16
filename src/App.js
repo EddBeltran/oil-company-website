@@ -1,21 +1,13 @@
 import Header from './components/Header';
 import HeroSlider from './components/HeroSlider/HeroSlider';
+import HeroLinks from './components/HeroLinks';
 import WhoWeAre from './components/WhoWeAre';
 import CompanyFacts from './components/CompanyFacts/CompanyFacts';
+import Values from './components/Values';
 
-//import AboutUs from './components/AboutUs'
-//import Certificates from './components/Certificates'
-// import Hero from './components/Hero'
-// import Links from './components/Links'
-// import Facts from './components/Facts'
-// import Values from './components/Values' 
-// import Services from './components/Services'
-// import Footer from './components/Footer'
-// import Mosaic from './components/Mosaic'
-// import News from './components/News'
 import useObserver from './hooks/useObserver'
 import { useEffect } from 'react'
-import HeroLinks from './components/HeroLinks';
+import Mosaic from './components/Mosaic/Mosaic';
 
 
 
@@ -47,6 +39,8 @@ function App(){
             <HeroLinks />
             <WhoWeAre />
             <CompanyFacts />
+            <Values />
+            <Mosaic />
         </div>
     )
 }
