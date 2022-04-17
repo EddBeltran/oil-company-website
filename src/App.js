@@ -4,6 +4,8 @@ import HeroLinks from './components/HeroLinks';
 import WhoWeAre from './components/WhoWeAre';
 import CompanyFacts from './components/CompanyFacts/CompanyFacts';
 import Values from './components/Values';
+import Certificates from './components/Certificates';
+import Footer from './components/Footer/Footer';
 
 import useObserver from './hooks/useObserver'
 import { useEffect } from 'react'
@@ -41,6 +43,8 @@ function App(){
             <CompanyFacts />
             <Values />
             <Mosaic />
+            <Certificates />
+            <Footer />
         </div>
     )
 }

@@ -21,32 +21,33 @@
     }
   }
 
-    //mosaic
-    .mosaic {
-      grid-template-columns: repeat(1, 1fr);
-      height: 650px;
-      
-      .one {
-        grid-column: 1/1;
-        grid-row: 1/2;
-      }
-      .two {
-        grid-column: 1/1;
-        grid-row: 2/3;
-      }
-      .three {
-        grid-column: 1/1;
-        grid-row: 3/4;
-      }
-      .four {
-        grid-column: 1/1;
-        grid-row: 4/5;
-      }
-      .five {
-        grid-column: 1/1;
-        grid-row: 5/6;
-      }
-    }
+  //mosaic
+  .mosaic {
+    grid-template-columns: repeat(1, 1fr);
+    height: 650px;
 
-    //
+    .one {
+      grid-column: 1/1;
+      grid-row: 1/2;
+    }
+    .two {
+      grid-column: 1/1;
+      grid-row: 2/3;
+    }
+    .three {
+      grid-column: 1/1;
+      grid-row: 3/4;
+    }
+    .four {
+      grid-column: 1/1;
+      grid-row: 4/5;
+    }
+    .five {
+      grid-column: 1/1;
+      grid-row: 5/6;
+    }
+  }
+
+  //footer component
+  
 }

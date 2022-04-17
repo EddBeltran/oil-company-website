@@ -407,28 +407,64 @@
 }
 
 .footer {
-    background-color: red;
     display: flex;
 
     &__info {
-        width: 30%;
-        background-color: aqua;
+        width: 40%;
+        font-size: 1.5rem;
+        color: #fff;
+        padding-right: 2rem;
+
+        p {
+            margin: 1.5rem 0;
+        }
 
         &__socialmedia {
-            img {
-                border: 1px solid red;
+            padding-top: 2rem;
+            display: flex;
+            flex-direction: row;
+
+            &__icon {
+                border: 1px solid rgb(255, 255, 255);
                 border-radius: 20rem;
-                width: 30px;
                 padding: 0.5rem;
-                margin-right: 0.5rem;
+                margin-right: 1rem;
+                cursor: pointer;
             }
         }
     }
     
     &__links {
-        width: 70%;
-        display: flex;
-        background-color: antiquewhite;
+        width: 60%;
+        display: grid;
+        grid-auto-flow: column;
+        gap: 1.5rem;
         justify-content: space-between;
+    }
+}
+
+//collapsible 
+.collapsible {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+
+    &__title {
+        font-size: 1.8rem;
+        font-family: config.$font-stack;
+        cursor: pointer;
+        margin-bottom: 1rem;
+
+        .icon {
+            display: none;
+        }
+    }
+
+    &__list {
+        li {
+            list-style: none;
+            font-size: 1.5rem;
+            padding-bottom: 0.3rem;
+        }
     }
 }
