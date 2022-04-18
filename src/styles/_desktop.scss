@@ -209,33 +209,6 @@
     }
 }
 
-// certificates component
-.certificate {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    column-gap: 1rem;
-    
-    &__logo {
-        display: flex;
-        align-content: center;
-        max-height: 60px;
-        max-width: 180px;
-        position: relative;
-
-        img {
-            opacity: 0.5;
-            filter: grayscale(100%);
-
-            &:hover {
-                filter: grayscale(0%);
-                opacity: 0.85;
-                transition: 0.1s ease-in;
-            }
-        }
-    }
-}
-
-
 .services {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -406,6 +379,35 @@
     background-color: blue;
 }
 
+// certificates component
+.certificate {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    overflow: hidden;
+
+    &__logo {
+        display: flex;
+        max-width: 150px;
+        max-height: 90px;
+        padding-right: 1.5rem;
+
+        img {
+            object-fit: contain;
+            opacity: 0.5;
+            filter: grayscale(100%);
+            transition: 0.3s ease-in;
+
+            &:hover {
+                opacity: 1;
+                filter: grayscale(0%);
+            }
+        }
+    }
+}
+
+
+// footer component
 .footer {
     display: flex;
 
