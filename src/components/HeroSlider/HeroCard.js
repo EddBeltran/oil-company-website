@@ -1,16 +1,16 @@
-import React from 'react'
-import Button from '../UI/Button'
+import React from "react";
+import Button from "../UI/Button";
 
-function HeroCard(props) {
+function HeroCard({ title, paragraph, callToAction, active }) {
   return (
-    <div className='hero__container'>
-        <div className='hero__container__card small-container'>
-            <h1 className='hero__container__card__header'>{props.title}</h1>
-            <p className='hero__container__card__text'>{props.paragraph}</p>
-            <Button text={props.callToAction} />
-        </div>
+    <div className="hero-card">
+      <div className={`hero-card__container ${active}`}>
+        <h1 className="hero-card__container__title">{title}</h1>
+        <p className="hero-card__container__paragraph">{paragraph}</p>
+        <Button text={callToAction} buttonStyle="primary" />
+      </div>
     </div>
-  )
+  );
 }
 
-export default HeroCard
+export default HeroCard;

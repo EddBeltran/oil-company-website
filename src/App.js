@@ -1,5 +1,5 @@
 import Header from './components/Header';
-import HeroSlider from './components/HeroSlider/HeroSlider';
+import Hero from './components/HeroSlider/Hero';
 import HeroLinks from './components/HeroLinks';
 import WhoWeAre from './components/WhoWeAre';
 import CompanyFacts from './components/CompanyFacts/CompanyFacts';
@@ -10,7 +10,6 @@ import Footer from './components/Footer/Footer';
 import useObserver from './hooks/useObserver'
 import { useEffect } from 'react'
 import Mosaic from './components/Mosaic/Mosaic';
-
 
 
 function App(){
@@ -37,7 +36,7 @@ function App(){
     return (
         <div>
             <Header />
-            <HeroSlider />
+            <Hero />
             <HeroLinks />
             <WhoWeAre />
             <CompanyFacts />

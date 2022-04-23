@@ -142,7 +142,7 @@
         &:hover {
             color: #fff;
             background-color: config.$primary-color;
-            & .icon-container svg {
+            & .icon svg {
                 fill: #fff;
             }
         }

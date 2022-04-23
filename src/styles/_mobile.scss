@@ -1,6 +1,51 @@
 @media screen and (max-width: 425px) {
   // header
   //hero-slider
+  .hero-carousel {
+    height: 500px;
+
+    &__shadow {  
+      &__content {  
+        &__buttons {
+          padding-bottom: 2rem;
+          width: 30%;
+        }
+      }
+    }
+  }
+  
+
+  //hero dots
+.hero-slide-link {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: 0.3s all ease-in;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &__progressbar {
+    background-color: rgba(177, 172, 172, 0.637);
+
+    &__bar {
+      background-color: orange;
+      width: 0%;
+      height: 5px;
+
+      &.active {
+        width: 100%;
+        transition: 3s all ease-in-out;
+      }
+    }
+  }
+
+  &__title {
+    display: none;
+  }
+}
+
   //hero-links
   //who we are
   //company-facts

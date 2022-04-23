@@ -1,0 +1,22 @@
+{
+  "slides": [
+    {
+      "id": 0,
+      "title": "Primer image 1",
+      "paragraph": "paragaph uno 1",
+      "link": "/#"
+    },
+    {
+      "id": 1,
+      "title": "Segunda image 2",
+      "paragraph": "paragraph dos 2",
+      "link": "/#"
+    },
+    {
+      "id": 2,
+      "title": "Tercera image 3",
+      "paragraph": "paragraph tres 3",
+      "link": "/#"
+    }
+  ]  
+}

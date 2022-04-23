@@ -1,18 +1,19 @@
-import React from 'react'
-import imgHero from '../assets/images/gas-station.jpg'
-import HeroCard from './HeroCard'
+import React from "react";
+import HeroCarousel from "./HeroCarousel";
+import sliderData from './sliderData.json';
+import img1 from '../../assets/images/eolic.jpg';
+import img2 from '../../assets/images/3D_seismic.jpg';
+import img3 from '../../assets/images/gas-station.jpg';
 
 function Hero() {
+  const slidesData = sliderData.slides;
+  const slidesImages = [img1, img2, img3]
+
   return (
-    <section className='hero big-container'>
-        <img className='hero__background-image' src={imgHero} alt="gas station" />
-        <HeroCard 
-            title='La mejor gasolina del pais' 
-            paragraph='somos una indistria de clase mundial en México, siempre por el mejor camino'
-            callToAction='Don bro'
-        />
-    </section>
-  )
+    <>
+      <HeroCarousel data={slidesData} images={slidesImages} showButtons={true} autoPlay={true} />
+    </>
+  );
 }
 
-export default Hero
+export default Hero;
