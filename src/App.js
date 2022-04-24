@@ -10,6 +10,7 @@ import Footer from './components/Footer/Footer';
 import useObserver from './hooks/useObserver'
 import { useEffect } from 'react'
 import Mosaic from './components/Mosaic/Mosaic';
+import Services from './components/Servicies/Services';
 
 
 function App(){
@@ -41,6 +42,7 @@ function App(){
             <WhoWeAre />
             <CompanyFacts />
             <Values />
+            <Services />
             <Mosaic />
             <Certificates />
             <Footer />
