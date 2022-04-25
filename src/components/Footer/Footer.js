@@ -30,20 +30,20 @@ function Footer(){
                 </div>
                 <div className='footer__links'>
                     <FooterLinks 
-                        category="Who We Are"
-                        links = {["Our company", "History", "Legacy", "Services"]}
+                        category="Quienes Somos"
+                        links = {["Nuestra Compañia", "Historia", "Legado", "Servicios"]}
                     />
                     <FooterLinks 
-                        category="Operations"
-                        links = {["Offshore", "Onshore", "Fields", "Equipment", "Gas Stations"]}
+                        category="Operaciones"
+                        links = {["Offshore", "Onshore", "Campos", "Equipos", "Estaciones de combustible"]}
                     />
                     <FooterLinks 
-                        category="Carrers"
-                        links = {["Job Oportunities", "Internships", "Our Team"]}
+                        category="Carreras"
+                        links = {["Oportunidades", "Internships", "Nuestro Equipo"]}
                     />
                     <FooterLinks 
-                        category="Investors"
-                        links = {["Investor Day", "Anual Report", "Business Oportunities", "Market"]}
+                        category="Inversores"
+                        links = {["Investor Day", "Reporte Anual", "Negocios", "Mercado"]}
                     />
                 </div>
             </div>

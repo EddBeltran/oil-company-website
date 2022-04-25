@@ -6,13 +6,8 @@ function Header() {
   const [language, setLanguage] = useState(true);
   const [showMenu, setShowMenu] = useState(false);
 
-  function handleLanguaje() {
-    setLanguage((prevState) => !prevState);
-  }
-
   function toggleBurger() {
     setShowMenu((prevState) => !prevState);
-    console.log("menu changed");
   }
 
   return (
@@ -23,12 +18,11 @@ function Header() {
           <span className="nav__logo__text">Azteca Oil</span>
         </a>
         <ul className={showMenu ? "nav__items active" : "nav__items"}>
-          <li>Who We Are</li>
-          <li>Operations</li>
-          <li>Carrers</li>
-          <li>Investors</li>
-          <li>Contact Us</li>
-          <li onClick={handleLanguaje}>{language ? "Eng" : "Esp"}</li>
+          <li>Quienes Somos</li>
+          <li>Operaciones</li>
+          <li>Oportunidades</li>
+          <li>Inversores</li>
+          <li>Contáctanos</li>
         </ul>
         <div
           className={showMenu ? "burger active" : "burger"}
