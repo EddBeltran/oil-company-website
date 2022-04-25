@@ -7,7 +7,7 @@ function HeroCard({ title, paragraph, callToAction, active }) {
       <div className={`hero-card__container ${active}`}>
         <h1 className="hero-card__container__title">{title}</h1>
         <p className="hero-card__container__paragraph">{paragraph}</p>
-        <Button text={callToAction} buttonStyle="primary" />
+        <Button text={callToAction} buttonStyle="secondary" />
       </div>
     </div>
   );

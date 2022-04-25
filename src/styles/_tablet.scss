@@ -85,6 +85,11 @@
     }
   }
 
+  //services
+  .services {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   //mosaic
   .mosaic {
     display: grid;

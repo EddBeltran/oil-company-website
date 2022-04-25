@@ -12,7 +12,7 @@ function Footer(){
                     <h4>Azteca Oil Company © 2022</h4>
                     <p>Tel: +55 00 00 1234<br />
                     Plaza San Pedro #33, México</p>
-                    <Button text="Contact Us"/>
+                    <Button text="Contact Us" buttonStyle="secondary" />
                     <div className='footer__info__socialmedia'>
                         <div className='footer__info__socialmedia__icon'>
                             <Icon name="facebook" color="#fff" size="20" />

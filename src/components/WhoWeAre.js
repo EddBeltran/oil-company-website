@@ -12,7 +12,7 @@ function WhoWeAre() {
                 <img className='who-we-are__image' src={ImgAboutUs} alt="quienes somos" />
                 <div className='who-we-are__content'>
                     <p>Somos una empresa 100% mexicana enfocada en el sector de hidrocarburos. Desde su fundación en 1988, Azteca Oil opera con responsabilidad ambiental y ética en pro de la industria petrolera del país.</p>
-                    <Button text='Ver infraestructura' buttonStyle="primary" />
+                    <Button text='Ver infraestructura' buttonStyle="secondary" />
                 </div>
             </div>
         </div>
