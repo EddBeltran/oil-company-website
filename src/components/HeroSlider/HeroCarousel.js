@@ -49,6 +49,7 @@ function HeroCarousel({ data, images, showButtons, autoPlay }) {
         src={selectedImage}
         className={loaded ? "loaded" : ""}
         onLoad={() => setLoaded(true)}
+        alt={data[selectedIndex].id}
       />
 
       <div className="hero-carousel__shadow">

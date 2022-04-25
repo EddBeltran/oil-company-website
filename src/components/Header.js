@@ -3,7 +3,6 @@ import { useState } from "react";
 import Icon from "./UI/Icon";
 
 function Header() {
-  const [language, setLanguage] = useState(true);
   const [showMenu, setShowMenu] = useState(false);
 
   function toggleBurger() {
