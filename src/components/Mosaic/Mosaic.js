@@ -2,11 +2,11 @@ import React from "react";
 import HeadSection from "../UI/HeadSection";
 import MosaicCell from "./MosaicCell";
 
-import oilRigTlp from "../../assets/images/oil-rig-tlp.jpg"
-import seismic from "../../assets/images/seismic.jpg";
-import eolic from "../../assets/images/eolic.jpg";
-import smy from "../../assets/images/3d-model.png";
-import pcp from "../../assets/images/pcp.jpg";
+import oilRigTlp from "../../assets/images/oil-rig-tlp.webp";
+import seismic from "../../assets/images/seismic.webp";
+import eolic from "../../assets/images/eolic.webp";
+import smy from "../../assets/images/3d-model.webp";
+import pcp from "../../assets/images/pcp.webp";
 
 function Mosaic() {
   return (

@@ -1,5 +1,5 @@
 import React from 'react'
-import ImgAboutUs from '../assets/images/petroleum-engineer.jpg'
+import ImgAboutUs from '../assets/images/petroleum-engineer.webp'
 import Button from './UI/Button'
 import HeadSection from './UI/HeadSection'
 

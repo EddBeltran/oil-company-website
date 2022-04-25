@@ -1,10 +1,10 @@
 import React from "react";
 import ServicesCard from "./ServicesCard";
 
-import serviceOne from "../../assets/images/serviceOne.jpeg";
-import serviceTwo from "../../assets/images/serviceTwo.jpg";
-import serviceThree from "../../assets/images/serviceThree.jpg";
-import serviceFour from "../../assets/images/serviceFour.jpeg";
+import serviceOne from "../../assets/images/serviceOne.webp";
+import serviceTwo from "../../assets/images/serviceTwo.webp";
+import serviceThree from "../../assets/images/serviceThree.webp";
+import serviceFour from "../../assets/images/serviceFour.webp";
 
 import HeadSection from "../UI/HeadSection";
 

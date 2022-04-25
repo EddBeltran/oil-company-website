@@ -1,9 +1,9 @@
 import React from "react";
 import HeroCarousel from "./HeroCarousel";
 import sliderData from './sliderData.json';
-import img1 from '../../assets/images/slideOne.jpg';
-import img2 from '../../assets/images/slideTwo.jpg';
-import img3 from '../../assets/images/slideThree.jpeg';
+import img1 from '../../assets/images/slideOne.webp';
+import img2 from '../../assets/images/slideTwo.webp';
+import img3 from '../../assets/images/slideThree.webp';
 
 function Hero() {
   const slidesData = sliderData.slides;

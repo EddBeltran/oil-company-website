@@ -1,11 +1,11 @@
 import React from 'react';
 import HeadSection from './UI/HeadSection';
 
-import Logo1 from '../assets/icons/logo-ADCI.jpg'
-import Logo2 from '../assets/icons/logo-industria-limpia.jpg'
-import Logo3 from '../assets/icons/logo-AENOR-1.png'
-import Logo4 from '../assets/icons/logo-ESR.png'
-import Logo5 from '../assets/icons/logo-AENOR-2.png'
+import Logo1 from '../assets/icons/logo-ADCI.webp'
+import Logo2 from '../assets/icons/logo-industria-limpia.webp'
+import Logo3 from '../assets/icons/logo-AENOR-1.webp'
+import Logo4 from '../assets/icons/logo-ESR.webp'
+import Logo5 from '../assets/icons/logo-AENOR-2.webp'
 
 
 function Certificates() {
