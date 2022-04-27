@@ -3,7 +3,7 @@ import React from 'react'
 function MosaicCell({image, text}) {
   return (
     <div className='mosaic__cell__container'>
-    <img src={image} alt={text} />
+    <img src={image} alt={text} loading="lazy"/>
     <h4>{text}</h4>
     </div>
   )
